@@ -1,0 +1,21 @@
+{
+  "name": "DownloadMoreMoney",
+  "version": "0.0.1",
+  "homepage": "https://github.com/MCProHosting/site-downloadmoremoney",
+  "authors": [
+    "Fahim Kabir <fahimk@mcprohosting.com>"
+  ],
+  "description": "Site for DownloadMoreMoney",
+  "license": "Proprietary",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.2.0"
+  }
+}
