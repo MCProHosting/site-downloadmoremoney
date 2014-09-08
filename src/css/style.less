@@ -1,1 +1,116 @@
 @import "../../bower_components/bootstrap/less/bootstrap.less";
+
+@border-radius-base:               0px;
+@border-radius-large:              0px;
+@border-radius-small:              0px;
+
+@btn-default-color:                #fff;
+
+@brand-primary:                    #a7cd6d;
+@font-family-sans-serif:           'Raleway', sans-serif;
+
+@navbar-default-bg:                #a7cd6d;
+@navbar-default-color:             #fff;
+@navbar-default-link-color:        #fff;
+
+@navbar-height: 100px;
+
+@navbar-default-link-hover-bg:     rgba(0,0,0,.05);
+
+@navbar-default-link-hover-color:  #fff;
+
+@navbar-default-border:            transparent;
+
+.navbar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    a {
+        text-transform: uppercase;
+    }
+}
+
+.navbar-brand {
+    background: url('../img/logo.png') center left no-repeat;
+    padding-left: 100px;
+}
+
+.hero { padding: 150px 0; }
+
+.hero {
+    .btn-default:hover {
+        background: #fff;
+        color: @brand-primary;
+    }
+    text-align: center;
+    color: #fff;
+    margin-top:                    @navbar-height;
+    background-color:              @brand-primary;
+    h1 {
+        margin-bottom: 15px;
+        font-weight: 900;
+        font-size: 35px;
+        text-transform: uppercase;
+    }
+    p {
+        font-size: 25px;
+        padding-bottom: 20px;
+    }
+}
+
+// Button variants
+//
+// Easily pump out default styles, as well as :hover, :focus, :active,
+// and disabled options for all buttons
+
+.button-variant(@color; @background; @border) {
+  color: @color;
+  background-color: transparent;
+  border-color: @background;
+  border-width: 3px;
+
+  &:hover,
+  &:focus,
+  &.focus,
+  &:active,
+  &.active,
+  .open > .dropdown-toggle& {
+    color: @background;
+    background-color: darken(@background, 10%);
+        border-color: transparent;
+  }
+  &:active,
+  &.active,
+  .open > .dropdown-toggle& {
+    background-image: none;
+  }
+  &.disabled,
+  &[disabled],
+  fieldset[disabled] & {
+    &,
+    &:hover,
+    &:focus,
+    &.focus,
+    &:active,
+    &.active {
+      background-color: @background;
+          border-color: @border;
+    }
+  }
+
+  .badge {
+    color: @background;
+    background-color: @color;
+  }
+}
+
+// Button sizes
+.button-size(@padding-vertical; @padding-horizontal; @font-size; @line-height; @border-radius) {
+  padding: @padding-vertical @padding-horizontal;
+  font-size: @font-size;
+  text-transform: uppercase;
+  line-height: @line-height;
+  border-radius: @border-radius;
+}
+
