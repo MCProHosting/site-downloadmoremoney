@@ -1,12 +1,12 @@
 {
-  "name": "DownloadMoreMoney",
-  "version": "0.0.1",
-  "homepage": "https://github.com/MCProHosting/site-downloadmoremoney",
+  "name": "gulp-breakout",
+  "version": "0.0.0",
   "authors": [
-    "Fahim Kabir <fahimk@mcprohosting.com>"
+    "Connor Peet <connor@connorpeet.com>"
   ],
-  "description": "Site for DownloadMoreMoney",
-  "license": "Proprietary",
+  "main": "Gulpfile.js",
+  "license": "MIT",
+  "homepage": "https://github.com/connor4312/gulp-breakout",
   "private": true,
   "ignore": [
     "**/.*",
@@ -16,7 +16,6 @@
     "tests"
   ],
   "dependencies": {
-    "bootstrap": "~3.2.0",
-    "animate.css": "~3.2.0"
+    "bootstrap": "~3.2.0"
   }
 }
